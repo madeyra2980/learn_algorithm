@@ -4,14 +4,13 @@ import java.util.Arrays;
  * minAndMax
  */
 public class minAndMax {
-
     public static void main(String[] args) {
         minAndMax instance = new minAndMax();
         int[] arrays = {1, 2, 3, 4, 5};
         int maxItem = instance.getMaxItem(arrays);
         int minItem = instance.getMinItem(arrays);
-        System.out.println("Max item: " + maxItem);
-        System.out.println("Max item: " + minItem);
+        System.out.println("Максимальное значение: " + maxItem);
+        System.out.println("Минимальное значение: " + minItem);
     }
 
     public int getMaxItem(int[] arrays) {
@@ -24,6 +23,7 @@ public class minAndMax {
         }
         return maxValue;
     }
+
     public int getMinItem(int[] arrays) {
         int minValue = arrays[0];
 
